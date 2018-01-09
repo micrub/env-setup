@@ -36,7 +36,7 @@ plugins=(ssh-agent vi-mode command-not-found git git-flow autojump vundle)
 # User configuration
 
 bindkey \^U backward-kill-line
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.yarn/bin:$PATH
 export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
