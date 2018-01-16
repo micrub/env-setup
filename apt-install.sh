@@ -9,6 +9,8 @@ apt-get install gdm
 apt-get remove unity lightdm ubuntu-desktop
 apt-get install git git-flow zsh vim keepassx keepass2 silversearcher-ag
 
+
+
 # aws cli and pip
 apt-get install libyaml-dev python-pip
 pip install awscli
@@ -42,5 +44,11 @@ cp .zshrc $HOME/.zshrc
 cp aliases.zsh $HOME/.oh-my-zsh/custom/
 cp ssh-aliases.zsh $HOME/.oh-my-zsh/custom/
 
+# cryptonote nodejs libs dependencies
+
+# libssl required for the node-multi-hashing module
+# Boost is required for the cryptonote-util module
+
+apt-get install libssl-dev libboost-all-dev
 apt-get autoremove
 apt-get autoclean
