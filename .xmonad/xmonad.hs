@@ -28,6 +28,7 @@ import XMonad.Util.EZConfig
 import XMonad.Util.Run
 import XMonad.Hooks.DynamicLog
 import XMonad.Actions.Plane
+import XMonad.Actions.SpawnOn {- Needs apt-get install libghc-xmonad-contrib-dev libghc-xmonad-contrib-doc libghc-xmonad-contrib-prof -}
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.UrgencyHook
 import XMonad.Hooks.ICCCMFocus
@@ -349,7 +350,10 @@ main = do
       setWMName "LG3D"
       windows $ W.greedyView startupWorkspace
       spawn "~/.xmonad/startup-hook"
-  , manageHook = manageHook defaultConfig
+      {-spawnOn "1:Term" "gnome-terminal"-}
+      {-spawnOn "2:Hub" "gnome-terminal"-}
+      spawnOn "3:Web" "firefox"
+  , manageHook = manageSpawn <+> manageHook defaultConfig
       <+> composeAll myManagementHooks
       <+> manageDocks
   , logHook = takeTopFocus <+> dynamicLogWithPP xmobarPP {

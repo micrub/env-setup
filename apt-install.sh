@@ -4,7 +4,7 @@ USER="/home/micr"
 add-apt-repository ppa:gnome-terminator -y
 apt-get update
 apt-get upgrade
-apt-get install xmonad libghc-xmonad-dev libghc-xmon ad-contrib-dev xmobar xcompmgr nitrogen stalonetray moreutils synapse consolekit ssh-askpass-gnome terminator
+apt-get install xmonad libghc-xmonad-dev libghc-xmon ad-contrib-dev libghc-xmonad-contrib-dev libghc-xmonad-contrib-doc libghc-xmonad-contrib-prof xmobar xcompmgr nitrogen stalonetray moreutils synapse consolekit ssh-askpass-gnome terminator
 apt-get install gdm
 apt-get remove unity lightdm ubuntu-desktop
 apt-get install git git-flow zsh vim keepassx keepass2 silversearcher-ag
