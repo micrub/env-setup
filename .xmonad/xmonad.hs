@@ -350,8 +350,8 @@ main = do
       setWMName "LG3D"
       windows $ W.greedyView startupWorkspace
       spawn "~/.xmonad/startup-hook"
-      {-spawnOn "1:Term" "gnome-terminal"-}
-      {-spawnOn "2:Hub" "gnome-terminal"-}
+      spawnOn "1:Term" "terminator"
+      spawnOn "2:Hub" "terminator"
       spawnOn "3:Web" "firefox"
   , manageHook = manageSpawn <+> manageHook defaultConfig
       <+> composeAll myManagementHooks
