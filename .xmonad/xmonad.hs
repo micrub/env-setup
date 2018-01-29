@@ -28,13 +28,15 @@ import XMonad.Util.EZConfig
 import XMonad.Util.Run
 import XMonad.Hooks.DynamicLog
 import XMonad.Actions.Plane
-import XMonad.Actions.SpawnOn {- Needs apt-get install libghc-xmonad-contrib-dev libghc-xmonad-contrib-doc libghc-xmonad-contrib-prof -}
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.UrgencyHook
 import XMonad.Hooks.ICCCMFocus
 import qualified XMonad.StackSet as W
 import qualified Data.Map as M
 import Data.Ratio ((%))
+{- Needs apt-get install libghc-xmonad-contrib-dev libghc-xmonad-contrib-doc libghc-xmonad-contrib-prof -}
+import XMonad.Actions.SpawnOn
+import XMonad.Util.XSelection
 
 {-
   Xmonad configuration variables. These settings control some of the
@@ -204,6 +206,10 @@ myLayouts =
 myKeyBindings =
   [
     ((myModMask, xK_b), sendMessage ToggleStruts)
+    -- search selection
+    {-, ((modMask .|. controlMask, xK_p   ), SM.submap $ searchEngineMap $ selectSearch)-}
+    -- open selection as URL
+    {-, ((modMask .|. shiftMask, xK_p ), safePromptSelection "firefox")-}
     , ((myModMask, xK_a), sendMessage MirrorShrink)
     , ((myModMask, xK_z), sendMessage MirrorExpand)
     , ((myModMask, xK_p), spawn "synapse")
