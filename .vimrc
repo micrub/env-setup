@@ -265,7 +265,7 @@ set pastetoggle=<leader>p
 set cc=80
 
 " enable mouse
-set mouse=a
+set mouse=r
 
 " Improve syntax highlighting & formating "
 "
