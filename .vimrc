@@ -274,6 +274,7 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 au BufNewFile,BufRead .babelrc set filetype=javascript
 au BufNewFile,BufRead .eslintrc set filetype=javascript
+au BufNewFile,BufRead *.ejs.js set filetype=javascript
 
 " associate *.boot with lisp filetype
 au BufRead,BufNewFile *.boot set filetype=clojure
