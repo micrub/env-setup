@@ -1,4 +1,4 @@
 #!/bin/bash
 
-space=`df -h | grep 'home' | cut -d' ' -f 7`
+space=`df -h | sed -n '/home/s/ \+/ /gp' | cut -d' ' -f 4`
 echo $space
