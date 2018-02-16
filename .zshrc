@@ -31,7 +31,7 @@ COMPLETION_WAITING_DOTS="true"
 # Had problems with vim-mode and ctrl-r search
 # https://github.com/robbyrussell/oh-my-zsh/issues/635
 set -o vi
-plugins=(ssh-agent vi-mode command-not-found git git-flow autojump vundle)
+plugins=(ubuntu dpkg ssh-agent vi-mode command-not-found git git-flow autojump vundle)
 
 # User configuration
 
