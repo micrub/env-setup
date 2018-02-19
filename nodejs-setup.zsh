@@ -1,7 +1,10 @@
 #!/bin/zsh
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | zsh
 source ~/.zshrc
-nvm install v8.9.4
+nvm install v8.9.4  # lts/carbon
+nvm install v6.13.0 # lts/boron
+nvm alias default 6.13.0
+
 node -v
 npm -v
 
