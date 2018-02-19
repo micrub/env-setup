@@ -1,3 +1,6 @@
 [user]
 	email = mrubanov-rubanov@protonmail.com
 	name = Michael Rubanov
+[push]
+
+	default = simple
