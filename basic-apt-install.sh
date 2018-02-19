@@ -1,7 +1,7 @@
 #!/bin/bash -x
 USER="/home/micr"
 
-sudo apt-get update
-sudo apt-get install git git-flow zsh vim keepassx keepass2 silversearcher-ag
-sudo apt-get autoremove
-sudo apt-get autoclean
+sudo apt-get update -q2
+sudo apt-get install git git-flow zsh vim keepass2 silversearcher-ag autojump -q2
+sudo apt-get autoremove -q2
+sudo apt-get autoclean -q2
