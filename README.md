@@ -1,3 +1,3 @@
 # Goal
 
-Track history of workspace initial setup practice on Ubuntu 14.04.
+Track history of workspace initial setup practice on Ubuntu 14.04 and 16.04.
