@@ -6,5 +6,7 @@ else
         echo " $HOME is set to '$HOME'";
         ./git-config-setup.sh
         ./basic-apt-install.sh
+        ./oh-myzsh-setup.sh
         ./vim-setup.sh
+        ./nodejs-setup.zsh
 fi
