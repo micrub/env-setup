@@ -16,4 +16,4 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update -q2
 sudo apt-get install yarn -q2
 yarn -v
-yarn global add node-gyp forever pm2 babel-cli loopback-cli prettier
+yarn global add grunt node-gyp forever pm2 babel-cli loopback-cli prettier
