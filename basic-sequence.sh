@@ -9,4 +9,5 @@ else
         ./oh-myzsh-setup.sh
         ./vim-setup.sh
         ./nodejs-setup.zsh
+        ./java-setup.zsh
 fi

@@ -1,7 +1,9 @@
-#!/bin/zsh
+#!/bin/bash -x
+#
+Q="-q2"
 sudo apt-add-repository ppa:webupd8team/java -y
-sudo apt-get update
-sudo apt-get install oracle-java8-installer
+sudo apt-get update $Q
+sudo apt-get install oracle-java8-installer $Q
 java -version
 curl -O https://download.clojure.org/install/linux-install-1.9.0.297.sh
 chmod +x linux-install-1.9.0.297.sh
